@@ -226,7 +226,13 @@ console.log(Addtitle(movies));
 
 /* ESERCIZIO 12 (filter)
   Scrivi una funzione per ottenere dall'array fornito solamente i film usciti nel millennio corrente.
-*/
+*/ function filmDate(arr) {
+  const date = arr.filter((film) => {
+    if (film.Year > 2000) return arr;
+  });
+  return date;
+}
+console.log(filmDate(movies));
 
 /* ESERCIZIO 13 (reduce)
   Scrivi una funzione per calcolare la somma di tutti gli anni in cui sono stati prodotti i film contenuti nell'array fornito.
